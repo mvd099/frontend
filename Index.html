@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS/style.css">
+        <script src="Scripts/script.js"></script>
+    </head>
+    <body>
+        <div class="details-container" id="myDetails">
+            <h1>
+                PARTY INFORMATION
+            </h1>
+
+            <label for="Location"><b>Location: </b></label><p></p>
+
+            <label for="Requirements"><b>Requirements: </b></label><p></p>
+
+            <label for="Details"><b>Details </b></label><p></p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet nam beatae quia hic necessitatibus praesentium deleniti voluptate veniam aliquid error, eum repudiandae soluta eius non pariatur, cupiditate repellendus doloribus! Sequi!</p>
+
+        </div>
+        
+        <button class="open-button" id="openButton" onclick="openForm()">Party Registration</button>
+
+        <!-- The form -->
+        <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1>Details</h1>
+
+            <label for="Name"><b> First Name: </b></label>
+            <input type="text" placeholder="Enter First Name" name="name" required>
+
+            <label for="Name"><b> Last Name: </b></label>
+            <input type="text" placeholder="Enter  Last Name" name="name" required>
+
+            <div class="radioGender">
+            <label for="gender"><b>Gender: </b></label>
+            
+                <input type="radio" id="genderMale" value="Male" name="gender" required>
+                <label for="genderMale">Male</label>
+                
+                <input type="radio" id="genderFemale" value="Female" name="gender" required>
+                <label for="genderFemale">Female</label>
+                
+                <input type="radio" id="genderOther" value="Other" name="gender" required>
+                <label for="genderOther">Other</label>                             
+            </div>
+            <p></p>
+
+            <label for="Year"><b>University Year: </b></label>
+            <select class="select" id="year" name="year" required>
+                <option value=""></option>
+                <option value="Freshman Year">Freshman</option>
+                <option value="Sophomore Year">Sophomore</option>
+                <option value="Junior Year">Junior</option>
+                <option value="Senior Year">Senior</option>
+            </select>
+
+            <label for="Invitation"><b>Invited By: </b></label>
+            <input type="text" placeholder="Invited by..." name="invitation" required>
+
+            <button type="submit" class="btn">Register Attendance</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+        </div>
+
+<!-- A button to open the popup form -->
+    </body>
+</html>    
